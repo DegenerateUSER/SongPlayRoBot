@@ -30,7 +30,7 @@ def time_to_seconds(time):
 ## Commands --------------------------------
 @bot.on_message(filters.command(['start']))
 def start(client, message):
-    TamilBots = f'👋 𝗛𝗲𝗹𝗹𝗼 @{message.from_user.username}\n\n𝙄 𝘼𝙢 𝙕𝙤𝙧𝙤[🎶](https://telegra.ph/file/9c9af363fe39de5442482.mp4)\n\n𝙎𝙚𝙣𝙙 𝙏𝙝𝙚 𝙎𝙖𝙢𝙚 𝙤𝙛 𝙩𝙝𝙚 𝙎𝙤𝙣𝙜𝙨 𝙔𝙤𝙪 𝙬𝙖𝙣𝙩..\n\n𝙏𝙮𝙥𝙚 /s Song name\n\n𝐄𝐠. `/s Rumbling`'
+    TamilBots = f'👋 𝗛𝗲𝗹𝗹𝗼 @{message.from_user.username}\n\n𝙄 𝘼𝙢 𝙕𝙤𝙧𝙤[🎶](https://telegra.ph/file/9c9af363fe39de5442482.mp4)\n\n𝙎𝙚𝙣𝙙 𝙏𝙝𝙚 𝙎𝙖𝙢𝙚 𝙤𝙛 𝙩𝙝𝙚 𝙎𝙤𝙣𝙜𝙨 𝙔𝙤𝙪 𝙬𝙖𝙣𝙩..\n\n𝙏𝙮𝙥𝙚 /song Sᴏɴɢ Nᴀᴍᴇ\n\n𝐄𝐠. `/s Rumbling`'
     message.reply_text(
         text=TamilBots, 
         quote=False,
@@ -44,7 +44,7 @@ def start(client, message):
         )
     )
 
-@bot.on_message(filters.command(['s']))
+@bot.on_message(filters.command(['song']))
 def a(client, message):
     query = ''
     for i in message.command[1:]:
